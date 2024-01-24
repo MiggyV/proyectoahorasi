@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/catalg.css">
+  <link rel="shortcut icon" href="Galeria/pest.png">
+  <title> Guitarras Clasicas</title>
+</head>
+<body>
+<header>
+
+<div class="cabecera">
+
+	 <a href="index.html" class="cont-lg"><img src="Galeria/lg.png" class="logo" ></a> 
+	
+	<div class="barranav">
+	 <input type="search" placeholder="buscador" class="navegador" > 
+		
+	</div>
+	
+
+<nav>
+      <ul>
+   
+        <li>
+        <a href="ingresar.html" class="acc">Entrar</a></li>
+        <li> About Us </li>
+        <li class="submenu"> <span>Mas Guitarras</span> 
+          <ul class="hijos">
+            <li><a href="acustica.html">Guitarras Acusticas </a></li>
+            <li><a href="clasica.html">Guitarras Clasicas</a></li>
+            <li><a href="electrica.html">Guitarras Electricas</a></li> 
+          </ul>
+
+
+        </li>
+      </ul>
+  </nav> 	 
+</div>
+
+</header>
+ 
+ 
+
+
+<div class="cuerpo">
+
+<aside class="sidebar">
+  
+  <div class="bloque-sidebar">
+        <h2>Guitarras por Marcas </h2>
+        <ul>
+            <li><a href="#alhambra"> Alhambra </a></li>
+
+            <li><a href="#fenderc"> Fender </a></li>
+
+            <li><a href="#yamaha"> Yamaha </a></li>
+        </ul>
+  </div></aside>
+
+<div id="alhambra" class="section"> <img src="Galeria/alhambra.svg" class="marca-cla">
+
+    <section class="container"  > 
+    	
+<a class="cubiculos" href=""> <img src="" alt="img-1">
+    <span for=" " class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""> 
+    <img src="" alt="img-2">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href="">
+    <img src="" alt="img-3">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""><img src="" alt="img-4">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=" "> <img src="" alt="img-5">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""><img src="" alt="img-6">
+    <span class="item-title">text</span>
+  </a>
+
+</section></div>
+
+
+
+<div id="fenderc" class="section"> <img src="Galeria/fender.svg" class="marca-cla">
+  
+<section class="container"  >
+
+ <a class="cubiculos" href=""> <img src="" alt="img-1">
+    <span for=" " class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""> 
+    <img src="" alt="img-2">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href="">
+    <img src="" alt="img-3">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""><img src="" alt="img-4">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=" "> <img src="" alt="img-5">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""><img src="" alt="img-6">
+    <span class="item-title">text</span>
+  </a>
+
+</section></div>
+
+<div id="yamaha" class="section"> <img src="Galeria/yamaha.svg" class="marca-cla">
+
+<section class="container"  >
+
+  <a class="cubiculos" href=""> <img src="" alt="img-1">
+    <span for=" " class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""> 
+    <img src="" alt="img-2">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href="">
+    <img src="" alt="img-3">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""><img src="" alt="img-4">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=" "> <img src="" alt="img-5">
+    <span class="item-title">text</span>
+  </a>
+
+  <a class="cubiculos" href=""><img src="" alt="img-6">
+    <span class="item-title">text</span>
+  </a>
+  
+</section></div>
+
+
+</div>
+
+
+
+	<footer> <span class="copy">© 2024 Copyright Guitarra Vieja.</span> 
+
+  <div class="redes">
+     
+     <a href=""> <img src="Galeria/fb.png" alt="Facebook"> </a>
+     <a href=""> <img src="Galeria/insta.png" alt="Instagram"></a>
+     <a href=""> <img src="Galeria/twitt.png" alt="Twitter"></a>
+     <a href=""> <img src="Galeria/gmail.png" alt="Gmail"></a>
+
+
+  </div>
+</footer>
+
+<script>
+  
+          var sections = document.getElementsByClassName('section');
+        var links = document.querySelectorAll('.sidebar ul li a');
+
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = this.getAttribute('href');
+                for (var j = 0; j < sections.length; j++) {
+                    sections[j].style.display = 'none';
+                }
+                document.querySelector(target).style.display = 'block';
+            });
+        }
+</script>
+
+</body>
+
+</html>

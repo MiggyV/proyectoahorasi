@@ -1,0 +1,145 @@
+*{ font-family: Vegur, 'PT Sans', Verdana, sans-serif;}
+
+body{
+    margin: 0;
+	background: linear-gradient(281deg, #fcfcfcc9, #a09e9e); }
+
+
+
+
+.bienvenida{   
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center; }
+
+
+.exit{   
+    margin: 1px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 44px;
+    flex-wrap: wrap;}
+
+.bienv{     
+    height: 64px;
+    border-radius: 38px;
+    margin-top: 1px; }
+
+form:nth-child(n) {
+     position: absolute;
+    border-radius: 2%;
+    background-color: rgb(32 35 37); 
+	padding: 2.2rem; 
+    height: 31.8rem;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 567px;
+    animation: slideUp 1s ease;
+    position: absolute; 
+    box-shadow: 0px 0px 11px 2px #979797; }
+
+
+
+	  @keyframes slideUp {
+            0% {
+                transform: translate(-50%, 100%);
+            }
+            100% {
+                transform: translate(-50%, -50%);
+            }
+
+        }   
+
+label{ color: white;
+
+font-size: 1.16rem; font-style: italic;} 
+
+
+form label{
+     display: flex;
+    justify-content: center;
+    margin-bottom: 8px; }
+
+
+
+.Formulario { 
+       margin: 15px 15px;	      
+    position: relative;
+   height: 100vh;
+}
+
+p{ font-size: 1rem; color: white;}
+
+.inp{  height: 2.6rem;
+    background: #a7f1d800;
+    border: none 1px;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    color: white;
+    font-size: 1rem;
+   }
+
+.inp:focus{ outline: none;  }
+
+.inp::placeholder{ font-size: 1rem; color: white; }
+
+
+.is2{
+    height: 2.6rem; 
+    font-size: 1.1rem;
+    color: black;
+font-style: italic; }
+
+span{
+    top: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;}
+
+.span-2{
+    
+    left: 46%;
+    top: 89.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute }
+
+
+.camb{
+    font-size: 1rem;
+    background-color: transparent;
+    border-style: none;
+    color: rgb(13 178 253); }
+
+
+button .camb:hover {
+
+        color: rgb(90 203 255);
+}
+
+#form-container2{
+    position: relative; ;
+}
+ 
+.casilla{    display: flex;
+    padding: 5px 6px;
+    flex-wrap: wrap;
+    padding-bottom: 1.2rem;
+    align-items: stretch;
+    flex-direction: column;    
+     margin-bottom: 28px;}
+
+	.casilla-3{display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    align-items: stretch;
+    flex-direction: column; };

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="Galeria/pest.png">
+	<link rel="stylesheet" type="text/css" href="css/ingre.css">
+	<title>Inicia Sesion o Registrate</title>
+</head>
+<body> 
+
+	 <a href="index.html"class="exit"> <img src="Galeria/back.png" class="exit"></a>
+
+<div class="Formulario" id="form-container1" >	
+	
+	<label class="bienv"><h2 class="bienvenida">Bienvenido A La Comunidad</h2></label>
+
+
+	<form action="" ><label>Iniciar Sesion</label>
+	 <div class="casilla"> <input type="email" placeholder="Email"  class="inp" autocomplete="email">	 </div>
+	<div class="casilla"> <input type="password" placeholder="Contraseña" class="inp" autocomplete="off"> </div>
+	<div class="casilla-3"> <input type="submit" value="Entrar" class="is2"> </div>
+		
+		<!-- Aquí va el contenido del formulario 1 -->
+		<span> <p>¿Aún no tienes una cuenta?</p>
+			 <button type="button"  onclick="nextForm(this)" value="registrarme"  class="camb">Registrate</button>
+			</span>
+
+	</form>
+</div>
+
+<div class="Formulario" id="form-container2" style="display:none">	
+
+
+	<label class="bienv"><h2 class="bienvenida">Unete A Nuestra Comunidad</h2></label>
+	 <form action="" class="formu" id="form"><label> Registrate</label>
+	<div class="casilla"> <input type="text" placeholder="Nombre" class="inp" id="nombre" autocomplete="off"> </div>
+	<div class="casilla"> <input type="text" placeholder="Apellido" class="inp" id="apellido" autocomplete="off"> </div>
+	<div class="casilla"> <input type="email" placeholder="Email" class="inp" id="correo" autocomplete="email"> </div>
+	<div class="casilla"> <input type="password" placeholder="Contraseña" class="inp" autocomplete="off"> </div>
+	<div class="casilla-3"> <input type="submit" value="Registrate" class="is2" id="is2"> </div>
+	<p class="warning" id="warning"></p>
+	
+	<!-- Aquí va el contenido del formulario 2 -->
+         <span class="span-2"> <p>¿Ya tienes una cuenta? </p>
+					 <button type="button" onclick="prevForm()" value="iniciar Sesion" class="camb">Iniciar Sesion</button> </span>
+	</form>
+</div>
+
+
+
+
+</body>
+<script>
+
+	
+    function nextForm() {
+        document.getElementById("form-container1").style.display = 'none';
+        document.getElementById("form-container2").style.display = 'block';
+    }
+
+    function prevForm() {
+        document.getElementById("form-container2").style.display = 'none';
+        document.getElementById("form-container1").style.display = 'block';
+    }
+
+
+ </script>
+</html>
